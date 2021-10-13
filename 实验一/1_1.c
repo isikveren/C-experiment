@@ -13,9 +13,9 @@ int main(){
     printf("第二个数:");
     scanf("%d",&num2);
     swap1(&num1,&num2);
-    num1 = num1 + num2;
-    num2 = num1 - num2;
-    num1 = num1 - num2;
+    // num1 = num1 + num2;
+    // num2 = num1 - num2;
+    // num1 = num1 - num2;
     printf("交换后第一个数:%d 第二个数:%d\n",num1,num2);
     return 0;
 }
