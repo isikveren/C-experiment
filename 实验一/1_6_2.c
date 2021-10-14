@@ -3,7 +3,7 @@
 int main(){
     char c = 'A';
     int j = 1,x,t = j,t2 = 3;
-    for(int i = 1;i<=16;i++){
+    for(int i = 1;i <= 16;i++){
       if(i == 1){
           for(int i2 = t2;i2>0;i2--){
             printf(" ");
@@ -16,10 +16,10 @@ int main(){
         if(i%t == 0){
             
             printf("\n");
-            j+=2;
-            t+=j;
+            j += 2;
+            t += j;
             t2--;
-        for(int i2 = t2;i2>0;i2--){
+        for(int i2 = t2;i2 > 0;i2--){
             printf(" ");
         }
         }

@@ -1,3 +1,4 @@
+//实验一 第四题
 #include<stdio.h>
 
 int main(){
@@ -8,13 +9,12 @@ int main(){
     while(x!=0){
         t = x%10;
         x /=10;
-        if(t%2 == 0)
-        {
+        if(t%2 == 0){
             y  +=t*i;
             i *=10;
         }
     }
-    if(y!=0)    printf("%ld\n",y);
+    if(y!=0) printf("%ld\n",y);
     else printf("为空\n");
     return 0;
 }
