@@ -1,3 +1,4 @@
+//实验一 第五题
 #include <stdio.h>
 #include <math.h>
 

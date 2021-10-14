@@ -1,4 +1,4 @@
-//实验一 第六题
+//实验一 第六题第二小题
 #include <stdio.h>
 
 int main(){

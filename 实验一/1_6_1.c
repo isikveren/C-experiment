@@ -1,3 +1,4 @@
+//实验一 第六题第一小题
 #include <stdio.h>
 
 int main(){
