@@ -3,7 +3,7 @@
 
 int main(){
     printf("请输入四位数整数!");
-    int num, a[4],temp;
+    int num, a[4];
     scanf("%d",&num);
     if(num / 1000 < 1){printf("输入的数字不符合要求！\n");}
     else{
@@ -15,7 +15,7 @@ int main(){
             int flag = 0;
             for(int j = 0;j + 1 < i;j++){
                 if(a[j] > a[j + 1]){
-                    temp = a[j];   
+                    int temp = a[j];   
                     a[j] = a[j + 1];
                     a[j + 1] = temp;
                     flag++;
@@ -27,9 +27,8 @@ int main(){
         for(int i = 0;i < 4;i++){
         printf("\t%d,",a[i]);
     }
-    printf("\n");
-    int num2 = a[3]*10+a[0];      //合并数字
-    printf("新组成的数字：%d\n",num2);
+    int num_new = a[3]*10+a[0];      //合并数字
+    printf("\n新组成的数字：%d\n",num_new);
     }
     return 0;
 }

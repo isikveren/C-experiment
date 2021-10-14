@@ -2,29 +2,31 @@
 #include <stdio.h>
 
 int main(){
-    char c = 'A';
-    int j = 1,x,t = j,t2 = 3;
+    char ch = 'A';
+    int odd = 1,count_char = 1,count_blank = 3;
     for(int i = 1;i <= 16;i++){
-      if(i == 1){
-          for(int i2 = t2;i2>0;i2--){
-            printf(" ");
+        if(i == 1){
+          for(int i2 = count_blank;i2 > 0;i2--){   //先在首行A前打印三个空格
+              printf(" ");
+          }
         }
-      }
-        if(i%2 == 0) printf("%c",c+32);
-        else printf("%c",c);
-        c++;  
-    
-        if(i%t == 0){
-            
-            printf("\n");
-            j += 2;
-            t += j;
-            t2--;
-        for(int i2 = t2;i2 > 0;i2--){
-            printf(" ");
+        if(i%2 == 0){                              //偶数位次转化成小写
+            printf("%c",ch + 32);
         }
+        else{
+            printf("%c",ch); 
         }
+        ch++;                                   
+        if(i%count_char == 0){                     //打印回车键
+            printf("\n");                       
+            odd += 2;
+            count_char += odd;
+            count_blank--;
+            for(int i2 = count_blank;i2 > 0;i2--){  //依次在剩余行首字母前打印空格
+                printf(" ");
+            }
         }
+    }
     
     return 0;
 }

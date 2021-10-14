@@ -10,7 +10,7 @@ int main(){
         if(num == 0||sum >= 100) break;  
         
         int count = 0;                    //判断素数
-        int k=sqrt((double)num);           
+        int k = sqrt((double)num);           
         for(int i = 2;i <= k;i++){        
             if(num % i == 0){
             count++;  
