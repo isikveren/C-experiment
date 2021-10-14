@@ -1,17 +1,18 @@
-#include<stdio.h>
+//实验一 第七题
+#include <stdio.h>
 
 int main(){
-    int n = 1;
-    double s = 0,d,d1,d2;
+    int num = 1;
+    double sum = 0, div, div_up, div_down;
     while(1){
 
-        d1 = 2 * n - 1;
-        d2 = (2 * n) * (2 * n);
-        d = d1 / d2;
-        s += d;
-        if(d <= 0.001) break;
-        n++;
+        div_up = 2 * num - 1;
+        div_down = (2 * num) * (2 * num);
+        div = div_up / div_down;
+        sum += div;
+        if(div <= 0.001) break;
+        num++;
     }
-       printf("n = %d, s = %lf\n",n,s);
+       printf("n = %d, s = %lf\n",num,sum);
     return 0;
 }

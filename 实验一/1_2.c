@@ -1,6 +1,6 @@
 //实验一 第二题
-#include<stdio.h>
-void swap(int* x,int* y);
+#include <stdio.h>
+
 int main(){
     printf("请输入四位数整数!");
     int num, a[4],temp;

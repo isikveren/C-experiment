@@ -1,4 +1,5 @@
-#include<stdio.h>
+//实验一 第六题
+#include <stdio.h>
 
 int main(){
     char c = 'A';

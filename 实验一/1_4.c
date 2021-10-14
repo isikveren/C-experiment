@@ -1,5 +1,5 @@
 //实验一 第四题
-#include<stdio.h>
+#include <stdio.h>
 
 int main(){
     long int x,y = 0;
