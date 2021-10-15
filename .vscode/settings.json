@@ -4,6 +4,7 @@
         "PB2.C": "cpp",
         "PB3.C": "cpp",
         "PB4.C": "cpp",
-        "PB5.C": "cpp"
+        "PB5.C": "cpp",
+        "stdio.h": "c"
     }
 }

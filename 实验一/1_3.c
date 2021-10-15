@@ -1,4 +1,4 @@
-//第三题
+//实验一 第三题
 #include <stdio.h>
 
 int main(){
