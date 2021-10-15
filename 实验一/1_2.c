@@ -5,11 +5,11 @@ int main(){
     printf("请输入四位数整数!");
     int num, a[4];
     scanf("%d",&num);
-    if(num / 1000 < 1){printf("输入的数字不符合要求！\n");}
+    if(num / 1000 < 1 || num / 10000 > 0){printf("输入的数字不符合要求！\n");}
     else{
-        for(int i = 3;i>=0;i--){   //分离数字
-            a[i] = num%10;
-            num = num/10;
+        for(int i = 3;i >= 0;i--){   //分离数字
+            a[i] = num % 10;
+            num = num / 10;
         }
         for(int i = 4;i > 0;i--){   //冒泡排序
             int flag = 0;

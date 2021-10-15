@@ -7,7 +7,7 @@ int main(){
     while(1){
         printf("请输入第%d个整数:",order++);
         scanf("%d",&num);
-        if(num == 0||sum >= 100) break;  
+        if(num == 0 || sum >= 100) break;  
         
         int count = 0;                    //判断素数
         int k = sqrt((double)num);           

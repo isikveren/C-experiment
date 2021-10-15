@@ -22,7 +22,7 @@ int main(){
         else{
             ch = ch - 2;
         }   
-        if(i%count_char == 0){                     //打印回车键
+        if(i % count_char == 0){                     //打印回车键
             printf("\n");                       
             odd += 2;
             count_char += odd;

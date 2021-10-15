@@ -10,14 +10,14 @@ int main(){
               printf(" ");
           }
         }
-        if(i%2 == 0){                              //偶数位次转化成小写
+        if(i % 2 == 0){                              //偶数位次转化成小写
             printf("%c",ch + 32);
         }
         else{
             printf("%c",ch); 
         }
         ch++;                                   
-        if(i%count_char == 0){                     //打印回车键
+        if(i % count_char == 0){                     //打印回车键
             printf("\n");                       
             odd += 2;
             count_char += odd;
