@@ -5,6 +5,16 @@
         "PB3.C": "cpp",
         "PB4.C": "cpp",
         "PB5.C": "cpp",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "1.C": "cpp",
+        "2.C": "cpp",
+        "3.C": "cpp",
+        "4.C": "cpp",
+        "5-2.C": "cpp",
+        "5.C": "cpp",
+        "6.C": "cpp",
+        "7.C": "cpp",
+        "8.C": "cpp",
+        "9.C": "cpp"
     }
 }

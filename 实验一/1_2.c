@@ -3,32 +3,57 @@
 
 int main(){
     printf("请输入四位数整数!");
-    int num, a[4];
+    int num, a,b,c,d;
     scanf("%d",&num);
-    if(num / 1000 < 1 || num / 10000 > 0){printf("输入的数字不符合要求！\n");}
+    if(num / 1000 < 1 || num / 10000 > 0){
+        printf("输入的数字不符合要求！\n");
+        }
     else{
-        for(int i = 3;i >= 0;i--){   //分离数字
-            a[i] = num % 10;
-            num = num / 10;
-        }
-        for(int i = 4;i > 0;i--){   //冒泡排序
-            int flag = 0;
-            for(int j = 0;j + 1 < i;j++){
-                if(a[j] > a[j + 1]){
-                    int temp = a[j];   
-                    a[j] = a[j + 1];
-                    a[j + 1] = temp;
-                    flag++;
-                }
+        //分离数字
+        for(int i = 3;i >= 0;i--){   
+            switch(i){
+                case 0: a = num % 10; break;
+                case 1: b = num % 10; break;
+                case 2: c = num % 10; break;
+                case 3: d = num % 10; break;
             }
-            if(flag == 0) break;
+            num /=10;
         }
-        printf("排序后升序显示：");  //打印显示
-        for(int i = 0;i < 4;i++){
-        printf("\t%d,",a[i]);
-    }
-    int num_new = a[3]*10+a[0];      //合并数字
-    printf("\n新组成的数字：%d\n",num_new);
+        //冒泡排序
+        if(a > b){
+            a = a + b;
+            b = a - b;
+            a = a - b;
+        }
+        if(b > c){
+            b = b + c;
+            c = b - c;
+            b = b - c;
+        }
+        if(c > d){
+            c = c + d;
+            d = c - d;
+            c = c - d;
+        }
+        if(a > b){
+            a = a + b;
+            b = a - b;
+            a = a - b;
+        }
+        if(b > c){
+            b = b + c;
+            c = b - c;
+            b = b - c;
+        }
+        if(a > b){
+            a = a + b;
+            b = a - b;
+            a = a - b;
+        }
+        printf("排序后升序显示：");
+        printf("\t%d,\t%d,\t%d,\t%d",a,b,c,d);
+        int num_new = d * 10 + a;
+        printf("\n新组成的数字：%d\n",num_new);
     }
     return 0;
 }

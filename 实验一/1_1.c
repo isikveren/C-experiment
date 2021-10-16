@@ -9,7 +9,7 @@ int main() {
     scanf("%d",&num2);
     //第一种方法
     int tmp1 = num1,tmp2 = num2;
-    
+
     tmp1 = tmp1 + tmp2;
     tmp2 = tmp1 - tmp2;
     tmp1 = tmp1 - tmp2;

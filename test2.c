@@ -11,19 +11,13 @@ int main(){
         }
         for(k = 1;k <= 2*i - 1;k++){
             count++;
-            if((count - 1) % 6 < 3){
-                printf("%c",ch);
-            }
-            else{
+            if(count % 2 == 0){
                 printf("%c",ch + 32);
             }
-            if(count % 3 != 0){                                //abc三个字母循环
-                ch++;
-            }  
             else{
-                ch = ch - 2;
+                printf("%c",ch);
             }
-            
+            ch++;
         }
         printf("\n");
     }
