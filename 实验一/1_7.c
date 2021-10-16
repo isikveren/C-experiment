@@ -10,7 +10,9 @@ int main(){
         div_down = (2 * num) * (2 * num);
         div = div_up / div_down;
         sum += div;
-        if(div <= 0.001) break;             //最后一项小于等于0.001时停止计算
+        if(div <= 0.001){
+            break;
+        }             //最后一项小于等于0.001时停止计算
         num++;
     }
        printf("n = %d, s = %lf\n",num,sum);

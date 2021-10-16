@@ -1,4 +1,4 @@
-//实验一 第二题
+//实验一 第二题 用数组表示
 #include <stdio.h>
 
 int main(){
